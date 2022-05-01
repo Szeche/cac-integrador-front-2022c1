@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,38 +13,82 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
      
 </head>
-
 <body>
+
 <!--componente_1 >>>>> NAVBAR  -->
 <!--color del navbar #353a40-->
-<nav class="navbar navbar-expand-sm "style="background-color: #353a40;">
-    <div class="container-fluid">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-11">
-            <a class="navbar-brand" href="https://www.buenosaires.gob.ar/educacion/codo-codo">                 
-            <img src="img/codoacodo.png" alt="Logo Codo a Codo" style="width:10%;" class="rounded-pill">             
-        </div>
-      </a>
-    </div>
-  </nav>
-<!--componente_2 >>>>> 1 COLUMNA IMG+TXT -->
-   
-        <div class="c-img">       
-            <img src="img/ba1.jpg" alt="" class="img-fluid">  
-            <div class="text">
-                <h1>
-                    Conf Bs As
-                </h1>
-                <p>
-                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos !
-                </p>
-            </div>
-        </div> 
-    
-    
 
-    <div class="container">
-            <!--componente_3 >>>>> CARDS -->
+<div class="container-fluid" style="background-color: #353a40;">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2">
+            <a href="https://www.buenosaires.gob.ar/educacion/codo-codo">
+            <img src="img/codoacodo.png" alt="" class="img-fluid mx-auto d-block">
+            </a>  
+        </div>
+        <div class="col-lg-9">
+            <nav class="navbar navbar-expand-lg navbar-dark"> 
+                <!-- en los NAVBAR tuve que poner "lg" para q no se me rompiera la web.-->
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Conf Bs As</a>
+                  <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+</div>
+
+<!--componente_2 >>>>> 1 COLUMNA IMG+TXT -->
+
+    <div class="container-fluid ">
+        <div class="c-img">       
+            <img src="img/ba1.jpg" alt="" class="img-fluid mx-auto d-block">
+                    <h1>
+                        Conf Bs As
+                    </h1>
+                    <p>
+                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos !
+                    </p>
+                <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
+                <button type="button" class="btn btn-success btn-lg">Comprar ticket</button>
+        </div>
+    </div>
+
+ <!--componente_3 >>>>> CARDS -->
+   
+<div class="container-fluid">
+    <div class="text text-center">
+        <h6>
+            CONOCE A LOS
+        </h6>
+        <h2>
+            <strong> ORADORES</strong>
+        </h2>
+    </div>
+</div>
+
+<div class="container">
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
@@ -85,26 +128,27 @@
             </div>
         </div>
     <br>
-    <br>
+
+<!--componente_4 >>>>> 2 COLUMNAS IMG + TEXTO -->
+
     <div class="container-fluid" style="background-color:#353a40;padding-left: 0%;">
-            <!--componente_4 >>>>> 2 COLUMNAS IMG + TEXTO -->
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="img/honolulu.jpg" alt="honolulu" class="card-img-top">
-                </div>
-                <div class="col-sm-6">
-                    <h3 class="text-light">
-                        Bs As - Octubre
-                    </h3>
-                    <p class="text-white-50"><small>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</small></p>
-                    
-                    <button type="button" class="btn btn-outline-secondary" >Conocé más</button>
-                </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/honolulu.jpg" alt="honolulu" class="card-img-top">
             </div>
+            <div class="col-sm-6">
+                <h3 class="text-light">
+                    Bs As - Octubre
+                </h3>
+                <p class="text-white-50"><small>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</small></p>
+                <button type="button" class="btn btn-outline-secondary" >Conocé más</button>
+            </div>
+        </div>
     </div>
-    <br>   
+  
  <!--componente_5 >>>>> 1 COLUMNA FORMULARIO -->
-    <div class="container-fluid">
+
+    <div class="container-fluid pt-3">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-8">
             <div class="text-center">
@@ -134,24 +178,62 @@
                     </div>
                   </div>
               
-                <!-- Entrada de Mensaje -->
-                <div class="form-outline mb-4">
-                  <textarea class="form-control" id="form4Example3" rows="4" placeholder="Sobre qué quieres hablar ?"></textarea>
-                  <label class="form-label" for="form4Example3">Recuerda incluir un título para tu charla</label>
-                </div>
+<!-- Entrada de Mensaje -->
 
-              
-                <!-- Boton Enviar -->
-                <div class="d-grid gap-2">
-                    <button class="btn btn-success" type="button">Enviar</button>
-                  </div>
-              </form>
-            </div>
+    <div class="form-outline mb-4">
+        <textarea class="form-control" id="form4Example3" rows="4" placeholder="Sobre qué quieres hablar ?"></textarea>
+        <label class="form-label" for="form4Example3">Recuerda incluir un título para tu charla</label>
+    </div>
+
+<!-- Boton Enviar -->
+    <div class="d-grid gap-2">
+        <button class="btn btn-success" type="button">Enviar</button>
+    </div>
+     </form>
+        </div>
         </div>
     </div>
     <br>
-  <!--componente_6 >>>>> FOOTER SIMIL NAVBAR -->
- 
+
+<!--componente_6 >>>>> FOOTER SIMIL NAVBAR -->
+
+<div class="container-fluid" style="background-color: #353a40;">
+    <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contáctanos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Prensa</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conferencias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Términos y condiciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Privacidad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Estudiantes</a>
+                      </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+</div>
+
 </body>
 
 </html>
